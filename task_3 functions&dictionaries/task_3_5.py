@@ -26,6 +26,8 @@ def get_jokes(number, flag=1):
         print(f'{noun} {adverb} {adjective}')
 
         if not flag and size:
+            # replace selected element with the last element of the list
+            # reduce size by one
             nouns[idx_noun] = nouns[size - 1]
             adverbs[idx_adv] = adverbs[size - 1]
             adjectives[idx_adj] = adjectives[size - 1]
