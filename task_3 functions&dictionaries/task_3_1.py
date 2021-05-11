@@ -1,4 +1,5 @@
 def num_translate(number):
+
     dict_en_rus = {
         'zero': 'ноль',
         'one': 'один',
@@ -12,9 +13,19 @@ def num_translate(number):
         'nine': 'девять',
         'ten': 'десять'
     }
+    if number[0].isupper():
+        number = number.lower()
+        flag = 1
 
-    return dict_en_rus.get(number, None)
+    result = dict_en_rus.get(number, None)
+
+    if result is not None and flag:
+        return result.capitalize()
+
+    return result
+
 
 my_number = input('Enter english number: ')
+num_translate(my_number)
 print(my_number, ':', num_translate(my_number))
 
