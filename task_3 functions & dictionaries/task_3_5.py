@@ -17,7 +17,7 @@ def get_jokes(number, flag=1):
                      f"Please, chose number less than {size + 1}.")
 
     for i in range(number):
-        idx_noun, idx_adv, idx_adj = r.randrange(size), r.randrange(size), r.randrange(size)
+        idx_noun, idx_adv, idx_adj = r.randrange(size)
 
         noun = nouns[idx_noun]
         adverb = adverbs[idx_adv]
