@@ -10,4 +10,10 @@ def thesaurus(*args):
 
     return dictionary
 
-print(thesaurus("Иван", "Мария", "Петр", "Илья"))
+
+my_dict = thesaurus("Мария", "Иван", "Петр", "Илья")
+print(my_dict)
+
+for key in sorted(my_dict.keys()):
+    print(f'{key} : {my_dict[key]}')
+
