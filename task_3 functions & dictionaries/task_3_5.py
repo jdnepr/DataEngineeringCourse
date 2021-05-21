@@ -17,7 +17,7 @@ def get_jokes(number, flag=1):
                      f"Please, chose number less than {size + 1}.")
 
     for i in range(number):
-        idx_noun, idx_adv, idx_adj = r.randrange(size), r.randrange(size), r.randrange(size)
+        idx_noun, idx_adv, idx_adj = r.randrange(size)
 
         noun = nouns[idx_noun]
         adverb = adverbs[idx_adv]
@@ -36,3 +36,5 @@ def get_jokes(number, flag=1):
 
 get_jokes(number=5, flag=0)
 
+# ideas:
+# https://www.oreilly.com/library/view/python-cookbook/0596001673/ch02s09.html
