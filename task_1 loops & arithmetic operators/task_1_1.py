@@ -9,7 +9,7 @@ elif (duration < 3600):
     print(minutes, 'min,', seconds, 's')
 elif (duration < 24*3600):
     hours = duration // 3600
-    print("duration / 3600", duration / 3600)
+    print("durtion / 3600", duration / 3600)
     minutes = (duration % 3600)
     print("minutes_", minutes)
     seconds = minutes % 60
