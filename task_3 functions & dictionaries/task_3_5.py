@@ -36,3 +36,5 @@ def get_jokes(number, flag=1):
 
 get_jokes(number=5, flag=0)
 
+# ideas:
+# https://www.oreilly.com/library/view/python-cookbook/0596001673/ch02s09.html
